@@ -1,0 +1,74 @@
+body{
+    background-image: linear-gradient(140deg, #EADEDB 0%, #52a767 50%, #BFD641 75%);
+    background-size: 2500px 2500px;
+    background-repeat: no-repeat;
+}
+
+header{
+    margin-left: 250px;
+}
+
+.container{
+    align-content: center;
+    width: 700px;
+    margin: 10px;
+    margin-left: 250px;
+}
+
+#sec_1{
+    background-image: linear-gradient(45deg, white 25%, rgb(147, 223, 147) 25%, rgb(133, 210, 233) 50%);
+    width: 500px;
+    height: 350px;
+    margin-left: 150px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#sec_2{
+    background-image: linear-gradient(45deg, white 25%, rgb(147, 223, 147) 25%, rgb(133, 210, 233) 50%);
+    width: 500px;
+    height: 350px;
+    margin-left: 150px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 56pt;
+    color: lightslategray;
+    text-shadow: 2px 2px #556377;
+}
+
+h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(118, 130, 235);
+    font-size: 38pt;
+    text-shadow: 2px 2px #556377;
+}
+
+h3{
+    font-family: cursive;
+    color: rgb(118, 130, 235);
+    font-size: 18pt;
+    text-shadow: 2px 2px #556377;
+}
+
+#logo{
+    border-radius: 20px;
+}
+
+aside{
+    width: 280px;
+    height: 500px;
+    border-radius: 20px;
+    background-color: greenyellow;
+    margin-left: 20px;
+    position: relative;
+    float: right;
+    padding: 10px;
+}
+
+p{
+    text-align: justify;
+}
