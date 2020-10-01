@@ -12,7 +12,7 @@ var res = document.getElementById('res')
     let homem = 0
     let mulher = 0
 
-for(var i = 0; i < 3; i++){
+for(var i = 0; i < 45; i++){
     arIdade[i] = Number(window.prompt('Qual a sua idade: '))
     arSexo[i] = window.prompt('Informe F ou M para sexo: ')
     arOpiniao[i] = Number(window.prompt('Informe sua opinião\n ótimo=4,\n bom=3, \n regular=2, \n péssimo=1: '))
