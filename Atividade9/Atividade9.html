@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade9</title>
+</head>
+<body>
+    <p id="retorno"></p>
+
+    <script>
+       function retangulo(x, y){
+           return {
+            x : Number(x),
+            y : Number(y),
+            area : function(){
+               return this.x * this.y;
+            }
+           }
+       }
+
+       r1 = retangulo(5, 8);
+
+       document.getElementById("retorno").innerHTML = r1.area();
+
+       function Conta (nome, banco, numConta){
+           this.nome = nome;
+           this.banco = banco;
+           this.numConta = numConta;
+           var saldo = 0;
+
+           this.getNome = function(){
+               return nome;
+           }
+           this.getBanco = function(){
+               return banco;
+           }
+           this.getNumConta = function(){
+               return numConta;
+           }
+
+           this.setSaldo = function(value){
+                saldo = value;
+            }
+
+        }
+
+        function Corrente(nome, banco, numConta){
+            Conta.call(this, nome, banco, numConta);
+            var saldoEspecial;
+            this.setSaldoEspecial = function(value){
+                saldoEspecial = value;
+            }
+            this.getSaldoEspecial = function(){
+                return saldoEspecial;
+            }
+
+        }
+
+        function Poupanca(nome, banco, numConta){
+            Conta.call(this, nome, banco, numConta);
+            var juros;
+            var dataVenc;
+
+            this.setJuros = function(value){
+                juros = value * 1.08;
+            }
+            this.setData = function(value){
+                data = value;
+            }
+            this.getJuros = function(){
+                return juros;
+            }
+            this.getData  = function(){
+                return data;
+            }
+        }
+
+       conta = new Conta('Denis','155', '123-45')
+       contaEspecial = new Corrente(conta.getNome(), conta.getBanco(), conta.getNumConta());
+       ContaPoupanca = new Poupanca(conta.getNome(), conta.getBanco(), conta.getNumConta());
+
+       console.log(conta);
+       console.log(contaEspecial);
+       console.log(ContaPoupanca);
+
+    </script>
+</body>
+</html>
