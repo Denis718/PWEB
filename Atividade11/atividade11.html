@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" placeholder="Digite o texto aqui" id='entrada'>
+    <hr />
+    <span>Maior:</span>
+    <input type="checkbox" id="maior" onchange="Maior()">
+    <hr />
+    <span>Menor:</span>
+    <input type="checkbox" id="menor" onchange="Menor()">
+    <script>
+        let maior = document.getElementById("maior");
+        let menor = document.getElementById("menor");
+
+        function Maior() {
+            if (maior.checked) {
+                menor.checked = false;
+                var caracter = document.getElementById('entrada').value;
+                document.getElementById('entrada').value = caracter.toUpperCase();
+            }
+        }
+
+        function Menor() {
+            if (menor.checked) {
+                maior.checked = false;
+                var caracter = document.getElementById('entrada').value;
+                document.getElementById('entrada').value = caracter.toLowerCase();
+            }
+        }
+    </script>
+</body>
+
+</html>
