@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 10</title>
+</head>
+
+<body>
+    <h1 id="texto">Abra a janela!</h1>
+    <img src="./img/Fechada.png " id="janela" onmouseover="AbrirJanela() " onmouseout="FecharJanela() " onclick="QuebrarJanela()">
+    <script>
+        var janela = document.getElementById("janela");
+
+        const closePath = "./assets/fechada.png "
+        const openPath = "./assets/aberta.png "
+        const brokenPath = "./assets/quebrada.png "
+
+        function AbrirJanela() {
+            janela.src = "./img/Aberta.png";
+            document.getElementById("texto").innerText = "Quebre a janela!";
+        }
+
+        function FecharJanela() {
+            janela.src = "./img/Fechada.png"
+            document.getElementById("texto").innerText = "Abra a janela!";
+        }
+
+        function QuebrarJanela() {
+            janela.src = "./img/Quebrada.png"
+            document.getElementById("texto").innerText = "Feche a janela!";
+        }
+    </script>
+</body>
+
+</html>
