@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 12</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="titulo">Formulário Principal</h1>
+
+        <form name="form1" action="mailto:teste@provedor.com" method="POST" enctype="text/plain" onsubmit="return validar()">
+            <div id="campos">
+                <p>
+                    <label for="nome"><em>Nome:</em></label><br>
+                    <input name="nome" type="text" size="43" id="nome">
+                </p>
+
+                <p>
+                    <label for="email"><em>E-mail:</em></label><br>
+                    <input name="email" type="text" size="70" id="email">
+                </p>
+                <label for="comentario"><em>Comentário:</em></label><br>
+                <textarea name="comentario" rows="10" cols="40" id="comentario"></textarea>
+            </div>
+            <h3>Pesquisa:</h3>
+            <p>Primeira vez nesta página??</p>
+            <p>
+                <input type="radio" name="pesquisa" id="sim" value="sim">
+                <label for="sim">Sim</label>
+                <input type="radio" name="pesquisa" id="nao" value="nao">
+                <label for="nao">Não</label>
+            </p>
+            <input type="submit"> <input type="button" value="Limpar">
+        </form>
+    </div>
+    <script src="functions.js"></script>
+</body>
+</html>

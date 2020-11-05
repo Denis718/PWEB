@@ -1,0 +1,15 @@
+.container{
+    background-color: rgb(96, 194, 250);
+    width: 600px;
+    text-align: center;
+    margin-left: 75px;
+}
+
+#titulo{
+    color: white;
+}
+
+#campos{
+    margin-left: 25px;
+    text-align: left;
+}
