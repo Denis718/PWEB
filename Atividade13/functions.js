@@ -1,11 +1,8 @@
 function seleciona(){
-    var curso = document.getElementById('curso')
+    var curso = document.getElementById("curso")
 
-    alert(`Deseja abrir a página do curso ${curso.options[curso.selecteIndex].value}`)
+    
+    alert(`Deseja abrir a página do curso ${curso.options[curso.selectedIndex].value}`)
+
+    return curso.options[curso.selectedIndex].value
 }
-   
-//element.options[element.selectedIndex].value
-
-
-
-//location=this.value
